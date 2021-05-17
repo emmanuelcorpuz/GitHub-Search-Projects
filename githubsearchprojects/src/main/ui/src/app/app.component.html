@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 mrgnbtm">
+      <h2>GitHub Search Projects</h2>
+      <form [formGroup]="githubForm">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="text" class="form-control" formControlName="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleInputPassword1">Token</label>
+            <input type="text" class="form-control" formControlName="token" id="exampleInputPassword1" placeholder="Token">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="exampleInputEmail1">Search String</label>
+            <input type="text" class="form-control" formControlName="searchstring" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search String">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4 mrgnbtm">
+      <app-display-board
+       [searchCount]="searchCount"
+       (searchProjectsEvent)="searchProjects()"
+      >
+      </app-display-board>
+    </div>
+  </div>
+</div>
+<div class="mrgnbtm">
+  <app-users *ngIf="projects.length !== 0" [projects]="projects"></app-users>
+</div>

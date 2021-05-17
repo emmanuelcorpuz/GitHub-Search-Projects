@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Projects</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Full_Name</th>
+        <th>HTML URL</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects; let i = index">
+        <td>{{project.id}}</td>
+        <td>{{project.name}}</td>
+        <td>{{project.full_name}}</td>
+        <td>{{project.html_url}}</td>
+        <td>{{project.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
