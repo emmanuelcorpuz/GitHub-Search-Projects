@@ -39,7 +39,7 @@ mvn clean install
 java -jar target/users-0.0.1-SNAPSHOT.jar
 
 
-Site Address:
+Site Address (see site UI screenshot below):
 
 http://localhost:4200/
 
