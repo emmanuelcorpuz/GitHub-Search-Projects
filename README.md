@@ -17,6 +17,7 @@ There are some prerequisites.
 - Maven
 - Github personal access token
 
+
 You can clone it and run it on your machine.
 
 // clone the project
@@ -36,6 +37,7 @@ npm start
 mvn clean install
 
 java -jar target/users-0.0.1-SNAPSHOT.jar
+
 
 Site Address:
 
