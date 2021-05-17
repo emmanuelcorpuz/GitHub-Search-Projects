@@ -18,6 +18,7 @@ There are some prerequisites.
 - Github personal access token
 
 You can clone it and run it on your machine.
+
 // clone the project
 
 git clone https://github.com/bbachi/angular-java-example.git
